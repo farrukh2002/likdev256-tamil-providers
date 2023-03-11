@@ -16,6 +16,9 @@ on:
 
 jobs:
   build:
+  container:
+      image: <URL>
+      options: --user root
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
