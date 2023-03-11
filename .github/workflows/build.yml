@@ -13,14 +13,12 @@ on:
       - main
     paths-ignore:
       - '*.md'
-
-container:
-      image: <URL>
-      options: --user root
+      
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    options: --user root
     steps:
       - name: Checkout
         uses: actions/checkout@master
